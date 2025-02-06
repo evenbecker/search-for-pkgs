@@ -1,0 +1,45 @@
+<div style="height: 2px; background-color: #85858579"></div>
+<div class="full-height">
+    <div class="container px-5 my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 rounded-3 shadow-lg">
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <div class="h1 fw-light">Log in </div>
+                  <p class="mb-4 text-muted">Warning: this is a prototype</p>
+                </div>     
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+      
+                  <!-- Name Input -->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="name" type="text" placeholder="Username" data-sb-validations="required" />
+                    <label for="name">Username</label>
+                    <div class="invalid-feedback" data-sb-feedback="name:required">Username is required.</div>
+                  </div>
+      
+                  <!-- Password Input -->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="Password" type="password" placeholder="Password" data-sb-validations="required,password" />
+                    <label for="Password">Password</label>
+                    <div class="invalid-feedback" data-sb-feedback="Password:required">Password is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="Password:password">Password is not valid.</div>
+                  </div>
+                  <!-- Submit error message -->
+                  <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                  </div>
+      
+                  <!-- Submit button -->
+                  <div class="d-grid">
+                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Login</button>
+                  </div>
+                </form>
+                <!-- End of contact form -->
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
