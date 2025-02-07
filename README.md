@@ -1,5 +1,7 @@
 # MyApp
 
+A prototype to search for Linux packages. Built using Angular and Bootstrap.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
 
 ## Development server
