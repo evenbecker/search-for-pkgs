@@ -9,6 +9,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'hello the Linux';
-  description = 'hello descript';
+  title = 'search-for-pkgs';
+  description = 'A prototype to search for Linux packages. Built using Angular and Bootstrap.';
 }

@@ -1,4 +1,4 @@
-# MyApp
+# search-for-pkgs
 
 A prototype to search for Linux packages. Built using Angular and Bootstrap.
 
