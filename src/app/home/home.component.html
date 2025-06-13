@@ -1,45 +1,17 @@
-
-<div style="height: 2px; background-color: #85858579"></div>
-<div class="full-height">
-    <p class=verdanaBold >Welcome to KaOS</p>
-    <p class=verdanaBlue>A Lean KDE Distribution</p>
-
-    <p class=qt>KaOS is an independent, built from-scratch Linux distribution, focused on Qt and KDE.</p>
-    <div id="left_side">
-    <img src="./assets/KaOS_logo.svg" alt="" /> 
+<div class="align-items-center default-container">
+    <div class="col-lg-8">
+      <div class="text-left">
+        <h1 class="home-title">Reclaim control over your OS by avoiding unnecessary entanglements and untold vulnerabilities.</h1>
+        <h2 class="home-author">Choose your init. <span id="dynamic-text">{{ dynamicText }}</span></h2>
+        <blockquote>
+            I don't use SystemD because PID1 must be simple, secure and stable.
+        </blockquote>
+        <button>
+            <a href="https://wiki.hyperbola.info/doku.php?id=en:philosophy:systemd_denial"  target="_blank" class="a-green">
+                > Check Hyperbola' article 
+            </a>
+        </button>
+      </div>
     </div>
-    <div id="right_side">
-      <p class = warn2>Warning: this Angular-based prototype uses experimental data for testing purpose. </p>
-      <p>Search for packages: </p>
-      <div id="inRside">
-        <form (ngSubmit)="mySearch()">
-          <div class="mb-3">
-            <!-- <input type="text" fonctionne -->
-            <input type="text" class="form-control" name="myInput"
-            placeholder="example: gnupg" [(ngModel)]="myInput">
-          </div>
-          <button type="submit" class="btn btn-primary">Search</button>
-          <!-- <button type="submit" class="btn btn-primary">
-            <i class="fas fa-search">Search</i>
-          </button> -->
-        </form>
-        <p> <br></p>
-     <!-- placeholder="example: gnupg" -->
-      <!-- <p>results:</p> -->
-<table>
-    <tr>
-      <th>name</th>
-      <th>version</th>
-      <th>description</th>
-    </tr>
-
-    <tr *ngFor="let pkg of listP2">
-        <td>{{ pkg.name }}</td>
-        <td>{{ pkg.version }}</td>
-        <td>{{ pkg.description }}</td>
-    </tr>
-  </table>
-
-    </div>
-    </div>
-</div>
+  </div>
+  
