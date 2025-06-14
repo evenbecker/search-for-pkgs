@@ -89,7 +89,7 @@ button:hover {
 
 .default-title{
     font-size: 5rem;
-    color: #e0f0ff;
+    color: hsl(209, 50%, 88%);
     margin-bottom: 5rem;
     line-height: 5rem;
 }
@@ -108,13 +108,13 @@ button:hover {
 
 .default-subtopic {
     font-size: 2rem;
-    color: #e0f0ff;
+    color: hsl(209, 50%, 88%);
     margin-bottom: 3rem;
 }
 
 blockquote {
     font-size: 1.5rem;
-    color: hsl(209, 11%, 79%);
+    color: hsl(209, 11%, 89%);
     line-height: 2rem;
     margin-bottom: 3rem;
 }
@@ -122,7 +122,7 @@ blockquote {
 .default-p {
     max-width: 820px;
     font-size: 1rem;
-    color: hsl(209, 11%, 79%);
+    color: hsl(209, 11%, 89%);
     line-height: 2rem;
     margin-bottom: 2rem;
 }
@@ -153,7 +153,7 @@ blockquote {
 
 .accordion-title .btn{
     text-decoration: none;
-    color: hsl(209, 11%, 79%);
+    color: hsl(209, 11%, 82%);
     font-weight: bold;
     font-size: 1.5rem;
 }

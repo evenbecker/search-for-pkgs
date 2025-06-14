@@ -8,9 +8,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
-    { path: 'about', component: AboutComponent },
-    { path: 'skills', component: SkillsComponent },
-    { path: 'portfolio', component: PortfolioComponent },
+    { path: 'security', component: AboutComponent },
+    { path: 'more', component: SkillsComponent },
+    { path: 'distros', component: PortfolioComponent },
     
     { path: '', component: HomeComponent},
     { path: '**', component: NotfoundComponent }

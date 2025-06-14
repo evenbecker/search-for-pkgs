@@ -18,7 +18,7 @@ export class PortfolioComponent {
     {
       id: 1,
       name: 'Void Linux',
-      summary: "A",
+      summary: "An independent Linux distribution that uses a powerful package manager, which was made from scratch, and the runit init system. It tries to exclude binary kernel blobs and is therefore as trustworthy as Devuan.",
       description: "F.",
       projectLink: 'https://voidlinux.org/',
       tags: [Tag.RUNIT, Tag.ELOGIND],
@@ -72,7 +72,7 @@ export class PortfolioComponent {
     {
       id: 7,
       name: 'Chimera Linux',
-      summary: "Th.",
+      summary: "An independent and security-oriented Linux distribution that uses musl as its libc implementation, userland tools from FreeBSD, and dinit as its init system. The devs plan to replace elogind by Turnstile.",
       description: "T.",
       projectLink: 'https://chimera-linux.org/',
       tags: [Tag.DINIT, Tag.ELOGIND],
