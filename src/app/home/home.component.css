@@ -17,8 +17,19 @@
 }
 
 .text-left {
-    margin: 80px;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 2px;
     text-align: start;
+    min-height: 410px;
+    max-height: 410px;
+}
+.text-two {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 10px;
+    text-align: start;  
 }
 
 .home-title {

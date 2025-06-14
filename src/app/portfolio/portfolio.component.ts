@@ -27,7 +27,7 @@ export class PortfolioComponent {
     {
       id: 2,
       name: 'Alpine Linux',
-      summary: "A.",
+      summary: "A distro designed to be small, simple, and secure. Because of its small size and fast startup, Alpine Linux is commonly used in containers and routers.",
       description: "T.",
       projectLink: 'https://www.alpinelinux.org/',
       tags: [Tag.OPENRC, Tag.CONSOLEKIT2, Tag.ELOGIND],
@@ -36,16 +36,16 @@ export class PortfolioComponent {
     {
       id: 3,
       name: 'Gentoo',
-      summary: 'T.',
+      summary: 'A highly flexible, source-based Linux distribution.',
       description: 'Th.',
       projectLink: 'https://www.gentoo.org/',
-      tags: [Tag.ELOGIND, Tag.RUNIT, Tag.OPENRC ],
+      tags: [Tag.ELOGIND, Tag.OPENRC ],
       pictures: []
     },
     {
       id: 4,
       name: 'Devuan',
-      summary: 'T.',
+      summary: 'A Debian fork born from a bitter systemd revolt.',
       description: 'I.',
       projectLink: 'https://www.devuan.org/',
       tags: [Tag.ELOGIND, Tag.CONSOLEKIT2, Tag.SYSV, Tag.OPENRC, Tag.RUNIT],
@@ -54,7 +54,7 @@ export class PortfolioComponent {
     {
       id: 5,
       name: 'MX Linux',
-      summary: 'T.',
+      summary: 'A Debian-based Linux distribution with additional software.',
       description: 'T.',
       projectLink: 'https://mxlinux.org/',
       tags: [Tag.ELOGIND, Tag.SYSV],
@@ -63,7 +63,7 @@ export class PortfolioComponent {
     {
       id: 6,
       name: 'AntiX',
-      summary: 'A.',
+      summary: 'A lightweight and Debian-based Linux distribution. No elogind. No libsystemd.',
       description: 'T.',
       projectLink: 'https://antixlinux.com/',
       tags: [Tag.CONSOLEKIT2, Tag.RUNIT, Tag.SYSV],
@@ -80,8 +80,8 @@ export class PortfolioComponent {
     },
     {
       id: 8,
-      name: 'Parabola',
-      summary: 'T.',
+      name: 'Parabola GNU/Linux-libre',
+      summary: 'A 100% free software distribution based on Arch Linux.',
       description: "T.",
       projectLink: 'https://www.parabola.nu/',
       tags: [Tag.LIBREKERNEL, Tag.OPENRC, Tag.ELOGIND],
@@ -90,7 +90,7 @@ export class PortfolioComponent {
     {
       id: 9,
       name: 'Artix',
-      summary: '.',
+      summary: 'Arch Linux based distro with many inits available.',
       description: ".",
       projectLink: 'https://artixlinux.org/',
       tags: [Tag.ELOGIND, Tag.DINIT, Tag.RUNIT, Tag.S6, Tag.OPENRC],

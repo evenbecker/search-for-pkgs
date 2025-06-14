@@ -21,7 +21,7 @@ body {
 }
 
 .a-green {
-    color: #adb5bd;
+    color: hsl(210, 11%, 77%);
     position: relative;
     text-decoration: none;
 }
