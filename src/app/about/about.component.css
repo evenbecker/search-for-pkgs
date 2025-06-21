@@ -8,3 +8,10 @@
     max-width: 820px;
     margin: 0.5rem 0rem 2rem 0rem;
   }
+  ul li{
+    /*max-width: 820px;*/
+    font-size: 1.125rem;
+    color: hsl(209, 11%, 89%);
+    line-height: 1.625rem;
+    margin-bottom: 0.5rem;
+   }
