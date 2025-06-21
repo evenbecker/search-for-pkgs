@@ -5,14 +5,65 @@
         <h2 class="home-author">Choose your init. <span id="dynamic-text">{{ dynamicText }}</span></h2>
       </div>
       <div class="text-two">  
-        <blockquote>
-            I don't use SystemD because PID1 must be simple, secure and stable.
-        </blockquote>
+        <div class="myrow">
+          <div class="column">
+            <p class="default-p">
+              I don't use SystemD because PID1 must be simple, secure and stable. The most respectable systemd-free distro is Obarun because there is no elogind and no etmpfiles. The Obarun community consists of Linux users who prioritize transparency, control, and simplicity.
+          </p>
+          </div>
+        
+          <div class="column2">
+            <a href="https://web.obarun.org/" target="_blank">
+              <img src="../../assets/pictures/logo_obarun.png" class="logo" alt="Obarun logo" />
+            </a>                
+          </div>
+        </div>
+    
         <button>
             <a href="https://wiki.hyperbola.info/doku.php?id=en:philosophy:systemd_denial"  target="_blank" class="a-green">
                 > Check Hyperbola' article 
             </a>
         </button>
+        <p class="default-p margeTop">I have used Devuan, MX Minux and PCLinuxOS with sysV. Now I am exploring Void Linux with runit and I have written the following cheat sheet:</p>
+      </div>
+      <div class="text-table">
+        <table style="width:100%">
+          <tr>
+            <th>action</th>
+            <th>sysV</th>
+            <th>runit</th>
+          </tr>
+          <tr>
+            <td>create a service and make the script executable</td>
+            <td>chmod +x /etc/init.d/my-service-script.sh</td>
+            <td>chmod +x /etc/sv/my-service-folder/run</td>
+          </tr>
+          <tr>
+            <td>enable a service, e.g. ufw</td>
+            <td>update-rc.d ufw defaults  </td>
+            <td>ln -s /etc/sv/ufw /service/</td>
+          </tr>  
+          <tr>
+            <td>start a service</td>
+            <td>/etc/init.d/ufw start</td>
+            <td>sv start ufw</td>
+          </tr>
+          <tr>
+            <td>disable a service at next boot</td>
+            <td>update-rc.d ufw disable <br>alternative: update-rc.d ufw remove</td>
+            <td>rm /service/ufw</td>
+          </tr>       
+          <tr>
+            <td>stop a service</td>
+            <td>/etc/init.d/ufw stop</td>
+            <td>sv stop ufw</td>
+          </tr>       
+          <tr>
+            <td>query service status</td>
+            <td>service ufw status</td>
+            <td>sv status ufw</td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
