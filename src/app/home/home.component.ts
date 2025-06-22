@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     "SystemD is ruled by Mcrosft & IBM.",
     "Join the battle.",
     "Runit is simple.",
-    "SystemD is unsecure.",
+    "SystemD is insecure.",
   ];
 
   currentPhraseIndex: number = 0;
