@@ -19,9 +19,10 @@
                     <li>the knowledge of your family/friends to impersonate them</li>
                 </ul>
                 <p class="default-p">                       
-                    The best protection is to use FOSS (free and open source) software on Linux/*BSD, to browse shopping/booking websites on Linux and to <span class="default-highlight">avoid installing apps on your smartphone</span>. No WhatsApp, no Facebook, no Google Contacts/Gmail. <br> Wi-Fi is insecure as fuck, better use 4G/5G networks.
+                    The best protection is to use FOSS (free and open source) software on Linux/*BSD, to browse shopping/booking websites on Linux/*BSD and to <span class="default-highlight">avoid installing apps on your smartphone</span>. No WhatsApp, no Facebook, no Google Contacts/Gmail. <br> Wi-Fi is insecure as fuck, better use 4G/5G networks.
                 </p>
-                <p class="default-p"> For computers, <span class="default-highlight"> reducing the attack surface</span> is the key. Some bloated software can be avoided. The list is long: MS Windows, MacOS, ChromeOS, non-free sofware, Google Chrome, Opera, Firefox, MS Edge, Slack, Snap (Linux), electron apps, Gnome, ... Flatpak is dangereous because most apps can access the microphone and home folder.
+                <p class="default-p"> For computers, <span class="default-highlight"> reducing the attack surface</span> is the key. Some bloated software can be avoided. The list is long: MS Windows, MacOS, ChromeOS, closed-source software such as Adobe pdf reader, Google Chrome, Opera, MS Edge and Slack. Some open-source software are also suspected to contain bugdoors: Electron apps, Chromium, Firefox and VLC are examples.
+                    <br>For Linux users: Closed-source drivers/firmware, Gnome, Systemd and Snap should be avoided. Flatpak is dangereous because most apps can access the microphone and home folder. Flatpak is not security-focused. 
                 </p>
                 <p class="default-p"> This approach is approved by <a href="https://www.stallman.org/facebook.html"  target="_blank" class="a-simple">
                     Richard Stallman 
@@ -29,8 +30,10 @@
                <a href="https://lukesmith.xyz/"  target="_blank" class="a-simple">
                 Luke Smith</a>,
                <a href="http://www.youtube.com/@emiliamerge7201"  target="_blank" class="a-simple">
-                Emilia Merge</a>, the Obarun community and many others.
+                Emilia Merge</a>, the Obarun community and many others. If you really need bloated web browsers or electron apps, then I recommend to sandbox them with Bubblejail. 
                 </p>
+                <p class="default-p">For email communication, using encryption helps protect the privacy of people you communicate with. GnuPG allows to encrypt your emails with a public key and a private key. </p>
+                <p class="default-p">What if you need to submit a rental application with employment information, your social security number, address? The recipient doesn't use GnuPG and you don't want that application sitting around in your email sent folder, or the recipient’s inbox forever. Shame on organizations which handle your sensitive data without any security. The only solution is to avoid relying on those organizations... but it's not always possible.</p>
                 <!--<button>
                     <a href="https://sysdfree.wordpress.com/2024/04/02/384/"  target="_blank" class="a-green">
                         > Check the Linux xz fiasco 
@@ -41,7 +44,7 @@
                 <div class="content-left">
                     <h2 class="default-topic">Insecure new kernels.</h2>
                     <p class="default-p">
-                        The kernel devs have lost control on their kernel since version 6.1. Sometimes, they merge code from third-parties  <span class="default-highlight"> without review</span>. I have seen unsigned kernel modules on some Debian-based OSs. The FSF is struggling to remove all this code for building the linux-libre kernel.
+                        GrSecurity brings additional patches to the mainline Linux kernel in order to enhance the security. Since April 2017, it is no longer free to the public. It is available only to paying customers of Open Source Security, Inc. Many Linux users have since considered that the mainline Linux kernel is not enough secure. A free and hardened kernel is under development but IMHO it’s not worth GrSecurity. <br>The kernel devs have almost lost control on their kernel since version 6.1. Sometimes, they merge code from third-parties  <span class="default-highlight"> without review</span>. I have seen unsigned kernel modules on some Debian-based OSs. The FSF is struggling to remove all this code for building the linux-libre kernel. The Hyperbola team is so disappointed that Hyperbola GNU/Linux-libre is switching to an OpenBSD base.
                     </p>
                     
                    
