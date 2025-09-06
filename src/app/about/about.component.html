@@ -15,14 +15,16 @@
                 <ul style="list-style-type:square;">
                     <li>the knowledge of your mobile phone number and your email address to send you malicious queries related to (fake) orders (paypal, amazon, ...)</li>
                     <li>malware to redirect you to fake website that mimic the shopping/booking website you use</li>
-                    <li>malware to read your paypal/amazon login</li>
+                    <li>malware to steal your login credentials (paypal, amazon, banks, emails, ...)  and your browser' bookmarks and autofill content (postal address, phone number, ...)</li>
                     <li>the knowledge of your family/friends to impersonate them</li>
+                    <li>malware to exploit your installed software or OS vulnerabilities and then access your sensitive documents (bank details, health insurance number, medical data, scans of sensitive data such as  identity card, ...)
                 </ul>
+                <div class="spacer"></div>
                 <p class="default-p">                       
                     The best protection is to use FOSS (free and open source) software on Linux/*BSD, to browse shopping/booking websites on Linux/*BSD and to <span class="default-highlight">avoid installing apps on your smartphone</span>. No WhatsApp, no Facebook, no Google Contacts/Gmail. <br> Wi-Fi is insecure as fuck, better use 4G/5G networks.
                 </p>
                 <p class="default-p"> For computers, <span class="default-highlight"> reducing the attack surface</span> is the key. Some bloated software can be avoided. The list is long: MS Windows, MacOS, ChromeOS, closed-source software such as Adobe pdf reader, Google Chrome, Opera, MS Edge and Slack. Some open-source software are also suspected to contain bugdoors: Electron apps, Chromium, Firefox and VLC are examples.
-                    <br>For Linux users: Closed-source drivers/firmware, Gnome, Systemd and Snap should be avoided. Flatpak is dangereous because most apps can access the microphone and home folder. Flatpak is not security-focused. In addition, it is important to regularly inspect the list of open ports. There should be none except those absolutely needed. And even there, check whether the service can be moved to 127.0.0.1 or ::1.
+                    <br>For Linux users: Closed-source drivers/firmware, GNOME, Systemd and Snap should be avoided. Flatpak is dangereous because most apps can access the microphone and home folder. Flatpak is not security-focused. In addition, it is important to regularly inspect the list of open ports. There should be none except those absolutely needed. And even there, check whether the service can be moved to 127.0.0.1 or ::1.
                 </p>
                 <p class="default-p"> This approach is approved by <a href="https://www.stallman.org/facebook.html"  target="_blank" class="a-simple">
                     Richard Stallman 
@@ -42,6 +44,17 @@
             </div>
             <div class="content">
                 <div class="content-left">
+                    <h2 class="default-topic">What's wrong about GNOME?</h2>
+                    
+                        <ul style="list-style-type:square;">
+                            <li>GNOME's developers have been criticized for collecting user data, such as system information, usage patterns, and even user behavior. This data is used to improve GNOME, but data could be misused. </li>
+                            <li>GNOME has tight integration with online services. Even if the corresponding software are not installed, the GNOME API's are present for the connectors.</li>
+                            <li>GNOME relies on third-party dependencies, such as systemd-logind and GNOME extensions, which increase the attack surface.</li>
+                            <li>Unlike KDE Plasma, GNOME does not have built-in tracking protection features, such as the ability to block tracking cookies and disable telemetry.</li>
+                            
+                        </ul>
+                        <div class="spacer"></div>
+                        <div class="spacer"></div>
                     <h2 class="default-topic">Insecure new kernels.</h2>
                     <p class="default-p">
                         GrSecurity brings additional patches to the mainline Linux kernel in order to enhance the security. Since April 2017, it is no longer free to the public. It is available only to paying customers of Open Source Security, Inc. Many Linux users have since considered that the mainline Linux kernel is not enough secure. A free and hardened kernel is under development but IMHO it’s not worth GrSecurity. <br>The kernel devs have almost lost control on their kernel since version 6.1. Sometimes, they merge code from third-parties  <span class="default-highlight"> without review</span>. I have seen unsigned kernel modules from Broadcom on some Debian-based OSs. The FSF is struggling to remove all this code for building the linux-libre kernel. The Hyperbola team is so disappointed that Hyperbola GNU/Linux-libre is switching to an OpenBSD base.

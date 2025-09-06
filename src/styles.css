@@ -136,7 +136,9 @@ blockquote {
 .default-highlight {
     color:hsl(141, 87%, 56%);
 }
-
+.spacer{
+    height: 20px;
+}
 
 .content-left {
     margin: 80px;
