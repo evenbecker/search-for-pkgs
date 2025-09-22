@@ -103,13 +103,18 @@ button:hover {
 .default-topic {
     font-size: 2rem;
     color: hsl(141, 87%, 56%);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .default-subtopic {
     font-size: 2rem;
     color: hsl(209, 50%, 88%);
     margin-bottom: 3rem;
+}
+.lastupdate {
+    font-size: 1rem;
+    color: hsl(209, 50%, 88%);
+    margin-bottom: 2rem;
 }
 
 blockquote {
@@ -149,7 +154,12 @@ blockquote {
     margin: 80px;
     text-align: start;
 }
-
+.sidemarg {
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: start;
+}
 
 .card.customClass {
     color: #ffffff;

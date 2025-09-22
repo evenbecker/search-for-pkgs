@@ -6,7 +6,7 @@ export class Tag {
     static readonly SHEPHERD = new Tag('shepherd', '#5a8581');
     static readonly SYSV = new Tag('sysV', '#6f733e');
     static readonly S6 = new Tag('s6', '#3c5c63');
-    static readonly DINIT = new Tag('dinit', '##4a6a77');
+    static readonly DINIT = new Tag('dinit', '#7151b3');
     static readonly OPENRC = new Tag('OpenRC', '#756278');
     static readonly RUNIT = new Tag('runit', '#45719b' )
 

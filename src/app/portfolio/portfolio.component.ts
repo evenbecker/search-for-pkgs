@@ -26,11 +26,11 @@ export class PortfolioComponent {
     },
     {
       id: 2,
-      name: 'Alpine Linux',
-      summary: "A distro designed to be small, simple, and secure. Because of its small size and fast startup, Alpine Linux is commonly used in containers and routers.",
+      name: 'Loc-OS',
+      summary: "A distro based on Debian stable branch. SysV is the default init. LXDE is their flagship DE.",
       description: "T.",
-      projectLink: 'https://www.alpinelinux.org/',
-      tags: [Tag.OPENRC, Tag.CONSOLEKIT2, Tag.ELOGIND],
+      projectLink: 'https://loc-os.com/',
+      tags: [Tag.SYSV, Tag.ELOGIND],
       pictures: []
     },
     {
@@ -71,11 +71,11 @@ export class PortfolioComponent {
     },
     {
       id: 7,
-      name: 'Chimera Linux',
-      summary: "An independent and security-oriented Linux distribution that uses musl as its libc implementation, userland tools from FreeBSD, and dinit as its init system. The devs plan to replace elogind by Turnstile.",
+      name: 'Calculate Linux',
+      summary: "A distro based on Gentoo. It comes with a user-friendly GUI installer and OpenRC.",
       description: "T.",
-      projectLink: 'https://chimera-linux.org/',
-      tags: [Tag.DINIT, Tag.ELOGIND],
+      projectLink: 'https://www.calculate-linux.org/',
+      tags: [Tag.OPENRC, Tag.ELOGIND],
       pictures: []
     },
     {
@@ -122,7 +122,34 @@ export class PortfolioComponent {
       projectLink: 'https://www.pclinuxos.com/',
       tags: [Tag.CONSOLEKIT2, Tag.SYSV],
       pictures: []
-    }
+    },
+    {
+      id: 13,
+      name: 'Slackware',
+      summary: "One of the first distro in Linux history. Some packages need to be locally built.",
+      description: "T.",
+      projectLink: 'https://www.slackware.com/',
+      tags: [Tag.SYSV, Tag.ELOGIND],
+      pictures: []
+    },
+     {
+      id: 14,
+      name: 'Alpine Linux',
+      summary: "A distro designed to be small, simple, and secure. Because of its small size and fast startup, Alpine Linux is commonly used in containers and routers.",
+      description: "T.",
+      projectLink: 'https://www.alpinelinux.org/',
+      tags: [Tag.OPENRC, Tag.CONSOLEKIT2, Tag.ELOGIND],
+      pictures: []
+    },
+    {
+      id: 15,
+      name: 'Chimera Linux',
+      summary: "An independent and security-oriented Linux distribution that uses musl as its libc implementation, userland tools from FreeBSD, and dinit as its init system. The devs plan to replace elogind by Turnstile.",
+      description: "T.",
+      projectLink: 'https://chimera-linux.org/',
+      tags: [Tag.DINIT, Tag.ELOGIND],
+      pictures: []
+    },
     
 
   ]
