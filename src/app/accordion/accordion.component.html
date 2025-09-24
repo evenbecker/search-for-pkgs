@@ -5,7 +5,7 @@
         <mat-panel-title>No transparency.</mat-panel-title>
       </mat-expansion-panel-header>
       <div class="accordion-text">
-        <p>Systemd hides everything behind layers of complexity. You cannot audit it. Systemd generates tons of logs. The systemd dev leaders are Mcrosft employees. They have refused to patch critical CVEs by considering them non-critical. </p> 
+        <p class="no-marge-p">Systemd hides everything behind layers of complexity. You cannot audit it. Systemd generates tons of logs. The systemd dev leaders are Mcrosft employees. They have refused to patch critical CVEs by considering them non-critical. </p> 
       </div>
     </mat-expansion-panel>
     <mat-expansion-panel class="customClass accordion-title">
@@ -13,8 +13,8 @@
         <mat-panel-title>Bugs.</mat-panel-title>
       </mat-expansion-panel-header>
       <div class="accordion-text">
-        <p> With Systemd, system shutdown can take several minutes and DNS resolving is not always reliable. There are also problems with kernel keyring management and cgroups.</p> 
-        <p>Many systemd-free distros use elogind. It's basically systemd-logind, extracted out to be a standalone daemon. This was supposed to be a <span class="default-highlight">temporary dirty solution</span> to make Gnome compatible with systemd-free distro but it has become the standard. Elogind has a lot of dead code and bugs in sleep/hibernate mode. ConsoleKit2 is superior because the most reliable code is the smallest code. I have used Devuan with ConsoleKit2 and it works great.</p>
+        <p class="no-marge-p"> With Systemd, system shutdown can take several minutes and DNS resolving is not always reliable. There are also problems with kernel keyring management and cgroups.</p> 
+        <p class="no-marge-p">Many systemd-free distros use elogind. It's basically systemd-logind, extracted out to be a standalone daemon. This was supposed to be a <span class="default-highlight">temporary dirty solution</span> to make Gnome compatible with systemd-free distro but it has become the standard. Elogind has a lot of dead code and bugs in sleep/hibernate mode. ConsoleKit2 is superior because the most reliable code is the smallest code. I have used Devuan with ConsoleKit2 and it works great.</p>
       </div>
     </mat-expansion-panel>
     <mat-expansion-panel class="customClass accordion-title">
@@ -22,8 +22,8 @@
         <mat-panel-title>Dependency Lock-In.</mat-panel-title>
       </mat-expansion-panel-header>
       <div class="accordion-text">
-        <p>MX Linux and Artix Linux are systemd-free but they have elogind and libsystemd. You cannot remove them. More and more software depends on elogind and libsystemd. MX/Artix devs don't care about this problem but it's a nightmare for AntiX and Obarun devs.</p>
-        <p>Pipewire is written with systemd in mind. It's hard to get all Pipewire features with other inits.</p>
+        <p class="no-marge-p">MX Linux and Artix Linux are systemd-free but they have elogind and libsystemd. You cannot remove them. More and more software depends on elogind and libsystemd. MX/Artix devs don't care about this problem but it's a nightmare for AntiX and Obarun devs.</p>
+        <p class="no-marge-p">Pipewire is written with systemd in mind. It's hard to get all Pipewire features with other inits.</p>
       </div>
     </mat-expansion-panel>
     <mat-expansion-panel class="customClass accordion-title">
@@ -31,8 +31,8 @@
         <mat-panel-title>What about *BSD?</mat-panel-title>
       </mat-expansion-panel-header>
       <div class="accordion-text">
-        <p>One of the critical arguments against systemd is the lack of portability to other Unices and the possibility that Linux-based systems using systemd would detach from the UNIX world. OpenBSD, FreeBSD and other BSD OSes are de facto incompatible with systemd and <strong><span class="default-highlight">any software that hard-depend on systemd</span></strong>.</p>
-        <p>Gnome and gvfs require elogind, so some FreeBSD devs want to replace ConsoleKit2 with elogind. This is a very bad idea. Gnome and Systemd are poisoning the Linux ecosystem!                 
+        <p class="no-marge-p">One of the critical arguments against systemd is the lack of portability to other Unices and the possibility that Linux-based systems using systemd would detach from the UNIX world. OpenBSD, FreeBSD and other BSD OSes are de facto incompatible with systemd and <strong><span class="default-highlight">any software that hard-depend on systemd</span></strong>.</p>
+        <p class="no-marge-p">Gnome and gvfs require elogind, so some FreeBSD devs want to replace ConsoleKit2 with elogind. This is a very bad idea. Gnome and Systemd are poisoning the Linux ecosystem!                 
           </p>
       </div>
     </mat-expansion-panel>
