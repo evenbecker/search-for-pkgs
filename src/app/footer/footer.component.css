@@ -42,14 +42,14 @@
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #00FF00;
+    background: hsl(141, 87%, 56%);;
     transition: width 0.3s ease, background-color 0.3s ease;
   }
   
   .footer-icons a:hover::after {
     width: 100%;
     left: 0;
-    background: #00FF00;
+    background: hsl(141, 87%, 56%);;
   }
   
   .footer-icons a:hover,

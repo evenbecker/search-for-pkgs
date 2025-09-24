@@ -34,14 +34,14 @@ body {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #00FF00; 
+    background: hsl(141, 87%, 56%);; 
     transition: width 0.3s ease, background-color 0.3s ease;
 }
 
 .a-green:hover::after {
     width: 100%;
     left: 0;
-    background: #00FF00;
+    background: hsl(141, 87%, 56%);;
 }
 
 .a-green:hover,
@@ -189,7 +189,7 @@ blockquote {
     color: #f8f9fa;
 }
 
-.acordion-title .btn::after {
+.accordion-title .btn::after {
     content: '';
     position: absolute;
     width: 0;
@@ -197,14 +197,14 @@ blockquote {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #00FF00; 
+    background: hsl(141, 87%, 56%);; 
     transition: width 0.3s ease, background-color 0.3s ease;
 }
 
 .accordion-title .btn:hover::after {
     width: 100%;
     left: 0;
-    background: #00FF00;
+    background: hsl(141, 87%, 56%);;
 }
 
 html, body { height: 100%; }
