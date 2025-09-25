@@ -31,7 +31,8 @@
             </div>
                 <div class="spacer"></div>
                 <p class="default-p">                       
-                    The best protection is to use FOSS (free and open source) software on Linux/*BSD, to browse shopping/booking websites on Linux/*BSD and to <span class="default-highlight">avoid installing apps on your smartphone</span>. No WhatsApp, no Facebook, no Google Contacts/Gmail. <br> Wi-Fi is insecure as fuck, better use 4G/5G networks.
+                    The best protection is to use FOSS (free and open source) software on Linux/*BSD, to browse shopping/booking websites on Linux/*BSD and to <span class="default-highlight">avoid installing apps on your smartphone</span>. No WhatsApp, no Facebook, no Google Contacts/Gmail.
+                     <br><a routerLink="/security" fragment="wifi" class="a-simple">Wi-Fi is insecure as fuck</a> , better use 4G/5G networks.
                 </p>
                 <p class="default-p"> For computers, <span class="default-highlight"> reducing the attack surface</span> is the key. Some bloated software can be avoided. The list is long: MS Windows, MacOS, ChromeOS, closed-source software such as Adobe pdf reader, Google Chrome, Opera, MS Edge and Slack. Some open-source software are also suspected to contain bugdoors: Electron apps, Chromium, Firefox and VLC are examples.
                     <br>For Linux users: Closed-source drivers/firmware, <a routerLink="/security" fragment="gnome_id" class="a-simple">GNOME</a>, Systemd and Snap should be avoided. Flatpak is dangereous because most apps can access the microphone and home folder. Flatpak is not security-focused. In addition, it is important to regularly inspect the list of open ports. There should be none except those absolutely needed. And even there, check whether the service can be moved to 127.0.0.1 or ::1.
@@ -42,7 +43,7 @@
                <a href="https://lukesmith.xyz/"  target="_blank" class="a-simple">
                 Luke Smith</a>,
                <a href="http://www.youtube.com/@emiliamerge7201"  target="_blank" class="a-simple">
-                Emilia Merge</a>, the Obarun community and many others. If you really need bloated web browsers or electron apps, then I recommend to sandbox them with Bubblejail or at least to log as another user to use these apps. The dedicated user should not belong to sudo group (to avoid sudo password sniffing). To create a new user called 'mesnate', simply do: useradd -m mesnate; passwd mesnate  
+                Emilia Merge</a>, the Obarun community and many others. If you really need bloated web browsers or electron apps, then I recommend to sandbox them with Bubblejail or at least to log as another user to use these apps. The dedicated user should not belong to sudo group (to prevent sudo password sniffing). To create a new user called 'mesnate', simply do: useradd -m mesnate; passwd mesnate  
                 </p>
                 <p class="default-p">For email communication, using encryption helps protect the privacy of people you communicate with. GnuPG allows to encrypt your emails with a public key and a private key. </p>
                 <p class="default-p">What if you need to submit a rental application with employment information, your social security number, address? The recipient doesn't use GnuPG and you don't want that application sitting around in your email sent folder, or the recipient’s inbox forever. Shame on organizations which handle your sensitive data without any security. The only solution is to avoid relying on those organizations... but it's not always possible.</p>
@@ -53,8 +54,20 @@
                 </button>-->
             </div>
             <div class="content">
-                <div class="content-left" id="gnome_id">
-                    <h2 class="default-topic">What's wrong about GNOME?</h2>
+                <div class="content-left">
+                    <h2 id="wifi" class="default-topic">What's wrong about Wi-Fi?</h2>
+                    <div class="bullet-box">
+                        <ul style="list-style-type:square;">
+                            <li>Most home routers run Linux without basic security hardening features. According to Cyber-ITL researchers, it's a shame because these features are easy to adopt, come with no downsides, and are standard practices in Linux-based desktop, server and mobile OS.</li>
+                            <li>Vulnerabilities in routers are an easy target for hackers. In addition, most users never update their routers firmware.</li>
+                            <li>Cybercriminals often spy on public Wi-Fi networks. Data sent through public Wi-Fi can easily be intercepted. Besides, a malicious hotspot can have a connection name that’s deliberately similar to the connection name of the coffee shop, train station, hotel or airport you visit.</li>
+                            <li>According to the FSF, proprietary Wi-Fi firmware and kernel modules could be spyware.</li>
+                            <li>Snowden recommends to disable Wi-Fi in your home router.</li>
+                        </ul>
+                    </div>
+                    <div class="spacer"></div>
+                        <div class="spacer"></div>
+                    <h2 id="gnome_id" class="default-topic">What's wrong about GNOME?</h2>
                     <div class="bullet-box">
                         <ul style="list-style-type:square;">
                             <li>GNOME's developers have been criticized for collecting user data, such as system information, usage patterns, and even user behavior. This data is used to improve GNOME, but data could be misused. </li>
