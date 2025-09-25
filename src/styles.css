@@ -19,7 +19,14 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-
+.a-simple{
+    color: hsl(141, 87%, 56%);
+    text-decoration: none;
+   }
+.a-simple:hover{
+    color: hsl(141, 87%, 43%);
+    
+    } 
 .a-green {
     color: hsl(210, 11%, 77%);
     position: relative;
