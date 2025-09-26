@@ -6,7 +6,7 @@
                     <img src="../../assets/pictures/final_art_lukesmith.png" alt="art from Luke Smith" class="center-picture">
                 </p>
                 <p class="lastupdate">
-                    Last updated: September 22, 2025
+                    Last updated: September 26, 2025
                 </p>
                 <h2 class="default-topic">Security Insight.</h2>
                                              
@@ -37,14 +37,24 @@
                 <p class="default-p"> For computers, <span class="default-highlight"> reducing the attack surface</span> is the key. Some bloated software can be avoided. The list is long: MS Windows, MacOS, ChromeOS, closed-source software such as Adobe pdf reader, Google Chrome, Opera, MS Edge and Slack. Some open-source software are also suspected to contain bugdoors: Electron apps, Chromium, Firefox and VLC are examples.
                     <br>For Linux users: Closed-source drivers/firmware, <a routerLink="/security" fragment="gnome_id" class="a-simple">GNOME</a>, Systemd and Snap should be avoided. Flatpak is dangereous because most apps can access the microphone and home folder. Flatpak is not security-focused. In addition, it is important to regularly inspect the list of open ports. There should be none except those absolutely needed. And even there, check whether the service can be moved to 127.0.0.1 or ::1.
                 </p>
-                <p class="default-p"> This approach is approved by <a href="https://www.stallman.org/facebook.html"  target="_blank" class="a-simple">
+                <p class="no-marge-p"> This approach is approved by <a href="https://www.stallman.org/facebook.html"  target="_blank" class="a-simple">
                     Richard Stallman 
                </a> (graduated from Harvard),
                <a href="https://lukesmith.xyz/"  target="_blank" class="a-simple">
                 Luke Smith</a>,
                <a href="http://www.youtube.com/@emiliamerge7201"  target="_blank" class="a-simple">
-                Emilia Merge</a>, the Obarun community and many others. If you really need bloated web browsers or electron apps, then I recommend to sandbox them with Bubblejail or at least to log as another user to use these apps. The dedicated user should not belong to sudo group (to prevent sudo password sniffing). To create a new user called 'mesnate', simply do: useradd -m mesnate; passwd mesnate  
-                </p>
+                Emilia Merge</a>, the Obarun community and many others. If you really need bloated web browsers or electron apps, then I recommend to follow one of these methods:</p>
+                <div class="bullet-box">
+                    <ul style="list-style-type:square;">
+                        <li>
+                sandbox these apps with Bubblejail 
+                        </li>
+                        <li> log as another user to use these apps. The dedicated user should not belong to sudo group (to prevent sudo password sniffing). To create a new user called 'mesnate', simply do:<br> useradd -m mesnate<br> passwd mesnate  
+                        </li>
+                            <li> run these apps in a Virtual Machine. I do not recommend distrobox/docker/AppImage/Flatpak for security reasons.
+                            </li>
+                        </ul>
+                    </div>
                 <p class="default-p">For email communication, using encryption helps protect the privacy of people you communicate with. GnuPG allows to encrypt your emails with a public key and a private key. </p>
                 <p class="default-p">What if you need to submit a rental application with employment information, your social security number, address? The recipient doesn't use GnuPG and you don't want that application sitting around in your email sent folder, or the recipient’s inbox forever. Shame on organizations which handle your sensitive data without any security. The only solution is to avoid relying on those organizations... but it's not always possible.</p>
                 <!--<button>
