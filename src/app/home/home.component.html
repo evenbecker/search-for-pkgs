@@ -8,7 +8,7 @@
         <div class="myrow">
           <div class="column">
             <p class="default-p">
-              I don't use SystemD because PID1 must be simple, secure and stable. The most respectable systemd-free distro is Obarun because there are no hidden systemd components (elogind, libsystemd, esysusers, etmpfiles). Gentoo used to allow this setup, but not anymore. The Obarun community consists of Linux users who prioritize transparency, control, and simplicity.
+              I don't use Systemd init because PID1 must be simple, secure and stable. Most systemd-free distros use some systemd components, namely elogind. The most respectable systemd-free distro is Obarun because there are no hidden systemd components (elogind, libsystemd, esysusers, etmpfiles). Gentoo used to allow this setup, but not anymore. The Obarun community consists of Linux users who prioritize transparency, control, and simplicity. Obarun uses s6 init, the true successor of sysV. According to Joborun, s6 is the perfect init for advanced/industrial use cases, but runit is satisfactory for single-user desktop Linux usage.
           </p>
           </div>
         
@@ -19,11 +19,7 @@
           </div>
         </div>
     
-        <button>
-            <a href="https://media.ccc.de/v/38c3-sixos-a-nix-os-without-systemd"  target="_blank" class="a-green">
-                > Check the 2024 conf. talk about sixos 
-            </a>
-        </button>
+       
         <p class="default-p margeTop">I have used Devuan, MX Minux, Loc-OS (icewm spin) and PCLinuxOS with sysV. Now I am exploring Void Linux with runit and I have written the following cheat sheet:</p>
       </div>
       <div class="text-table">
