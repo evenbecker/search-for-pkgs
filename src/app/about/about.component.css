@@ -8,6 +8,11 @@
     max-width: 820px;
     margin: 0.5rem 0rem 2rem 0rem;
   }
+  .no-fb{
+    width: 50%;
+    max-width: 230px;
+    /*margin: 0 auto;*/
+  }
   ul li{
     /*max-width: 820px;*/
     font-size: 1.125rem;

@@ -75,20 +75,7 @@ td, th{
 tr:nth-child(even) {
     background-color: hsl(210, 24%, 20%);
   }
-  .myrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .column {
-    flex: 70%;
-    padding: 5px;    
-  }
-  .column2 {
-    flex: 30%;
-    padding: 5px;
-    
-  }
+
   .logo {
     width: 80%;
     /*height: 6em;*/
