@@ -67,7 +67,7 @@ table {
     width: 100%;
   }
 td, th{
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     color: hsl(209, 11%, 89%);
     text-align: left;
   padding: 6px 20px;
@@ -75,18 +75,62 @@ td, th{
 tr:nth-child(even) {
     background-color: hsl(210, 24%, 20%);
   }
-
+.maxi-w{
+    max-width: 670px;
+    
+}
+#filler{
+    background-color: blueviolet;
+    height: 50px;
+    width:100%;
+}
   .logo {
     width: 80%;
+    max-width: 140px;
     /*height: 6em;*/
-    padding: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
     will-change: filter;
     transition: filter 300ms;
   }
   .logo:hover {
     filter: drop-shadow(0 0 2em hsla(196, 68%, 44%, 0.667));
   }
-     
+  .logoArtix {
+    width: 80%;
+    max-width: 220px;
+    /*height: 6em;*/
+    padding: 1em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logoArtix:hover {
+    filter: drop-shadow(0 0 2em hsla(196, 68%, 44%, 0.667));
+  }
+  .logoVoid {
+    width: 80%;
+    max-width: 200px;
+    /*height: 6em;*/
+    padding: 1em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logoVoid:hover {
+    filter: drop-shadow(0 0 2em hsla(130, 68%, 44%, 0.667));
+  }
+  .logoAntix {
+    max-width: 96px;
+    /*height: 6em;*/
+    padding: 1em;
+    /*margin-left: 1em;*/
+    margin-bottom: 2em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logoAntix:hover {
+    filter: drop-shadow(0 0 2em hsla(196, 42%, 59%, 0.667));
+  }     
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: hsl(141, 87%, 56%); }

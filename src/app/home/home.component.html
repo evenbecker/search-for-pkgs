@@ -7,20 +7,35 @@
       <div class="text-two">  
         <div class="myrow">
           <div class="column">
+            <div class="maxi-w">
             <p class="default-p">
-              I don't use Systemd init because PID1 must be simple, secure and stable. Most systemd-free distros use some systemd components, namely elogind. The most respectable systemd-free distro is Obarun because there are no hidden systemd components (elogind, libsystemd, esysusers, etmpfiles). Gentoo used to allow this setup, but not anymore. The Obarun community consists of Linux users who prioritize transparency, control, and simplicity. Obarun uses s6 init, the true successor of sysV. According to Joborun, s6 is the perfect init for advanced/industrial use cases, but runit is satisfactory for single-user desktop Linux usage.
+              I don't use Systemd init because PID1 must be simple, secure and stable. Most systemd-free distros use some systemd components, namely elogind. The most respectable systemd-free distro is Obarun because there are no hidden systemd components (elogind, libsystemd, esysusers, etmpfiles). Gentoo used to allow this setup, but not anymore. The Obarun community consists of Linux users who prioritize transparency, control, and simplicity. Obarun uses s6 init, the true successor of sysV. According to Joborun, s6 is the perfect init for advanced/industrial use cases, but runit is easier and satisfactory for single-user desktop Linux usage. Void Linux, Artix Linux and AntiX have a great runit implementation too. 
           </p>
+
+          <p class="default-p margeTop">I have used Devuan, MX Minux, Loc-OS (icewm spin) and PCLinuxOS with sysV. Now I am exploring Void Linux with runit and I have written the following cheat sheet:</p>
           </div>
-        
+          <!-- <div id="filler"></div> -->
+        </div>
           <div class="column2">
+            <div id="vertical-logos">
             <a href="https://web.obarun.org/" target="_blank">
               <img src="../../assets/pictures/logo_obarun.png" class="logo" alt="Obarun logo" />
-            </a>                
+            </a>   
+            <a href="https://artixlinux.org/" target="_blank">
+              <img src="../../assets/pictures/ArtixLogo.svg" class="logoArtix" alt="Artix logo" />
+            </a> 
+            <a href="https://voidlinux.org/" target="_blank">
+              <img src="../../assets/pictures/Void_Linux_logo.svg" class="logoVoid" alt="Void logo" />
+            </a>   
+            <a href="https://antixlinux.com/" target="_blank">
+              <img src="../../assets/pictures/nXecure-antiX-96x96.png" class="logoAntix" alt="AntiX logo" />
+            </a>    
+          </div>        
           </div>
         </div>
     
        
-        <p class="default-p margeTop">I have used Devuan, MX Minux, Loc-OS (icewm spin) and PCLinuxOS with sysV. Now I am exploring Void Linux with runit and I have written the following cheat sheet:</p>
+        
       </div>
       <div class="text-table">
         <table>
@@ -61,6 +76,7 @@
           </tr>
         </table>
       </div>
+      <div class="spacer"></div>
     </div>
   </div>
   

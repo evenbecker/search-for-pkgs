@@ -131,13 +131,21 @@ button:hover {
     align-items: center;
   }
   .column {
-    flex: 70%;
-    padding: 5px;    
+    flex: 70%;    
+    padding-right: 5px; 
+        
   }
   .column2 {
     flex: 30%;
     padding: 5px;
     
+    
+  }
+  #vertical-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 blockquote {
     font-size: 1.5rem;
