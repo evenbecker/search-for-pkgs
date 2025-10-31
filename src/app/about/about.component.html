@@ -6,7 +6,7 @@
                     <img src="../../assets/pictures/final_art_lukesmith.png" alt="art from Luke Smith" class="center-picture">
                 </p>
                 <p class="lastupdate">
-                    Last updated: September 28, 2025
+                    Last updated: October 31, 2025
                 </p>
                 <h2 class="default-topic">Security Insight.</h2>
                                              
@@ -15,7 +15,7 @@
                     The current state of privacy/security is catastrophic. Data breaches are everywhere. Chances are that your WhatsApp login is on the darknet. 
                     <a href="https://www.techradar.com/pro/security/atandt-denies-leaked-data-of-70-million-people-is-from-its-systems"  target="_blank" class="a-simple">
                         Most companies deny leaked data of their customers.</a>
-                     Medical data might be shared with marketers. Employers and insurrance companies might access these sensitive data and discriminate people. In addition, thousands of script kiddies and cyber-punks want to hack you... It's time to think about how to protect computer users' privacy.</p>
+                     Medical data might be shared with marketers. Employers and insurrance companies might access these sensitive data and discriminate people. Many hospitals send sensitive patient information to Meta through its tracking pixel. In addition, thousands of script kiddies and cyber-punks want to hack you... It's time to think about how to protect computer users' privacy.</p>
                      <p class="big-p"><q>Privacy: the singular right able to protect all of your other rights</q> --RTP</p>
 
                 <p class="no-marge-p">
@@ -43,7 +43,7 @@
                 </div>
                 <div class="spacer"></div>
                 <div class="spacer"></div>
-                <p class="default-p"> For computers, <span class="default-highlight"> reducing the attack surface</span> is the key. Bloated software should be avoided. The list is long: MS Windows, MacOS, ChromeOS, closed-source software such as Adobe pdf reader, Google Chrome, Opera, MS Edge and Slack. Some open-source software are also suspected to contain bugdoors: Electron apps, Chromium, Firefox and VLC are examples.
+                <p class="default-p"> For computers, <span class="default-highlight"> reducing the attack surface</span> is the key. Bloated software should be avoided. The list is long: MS Windows, MacOS, ChromeOS, closed-source software such as Adobe pdf reader, Google Chrome, Opera, MS Edge and Slack.  
                     <br>For Linux users: Closed-source drivers/firmware, <a routerLink="/security" fragment="gnome_id" class="a-simple">GNOME</a>, Systemd and Snap should be avoided. Flatpak is dangereous because most apps can access the microphone and home folder. Flatpak is not security-focused. In addition, it is important to regularly inspect the list of open ports. There should be none except those absolutely needed. And even there, check whether the service can be moved to 127.0.0.1 or ::1.
                 </p>
                 <p class="no-marge-p"> This approach is approved by <a href="https://www.stallman.org/facebook.html"  target="_blank" class="a-simple">
@@ -104,7 +104,18 @@
                         <br>GrSecurity brings additional patches to the mainline Linux kernel in order to enhance the security. Since April 2017, it is no longer free to the public. It is available only to paying customers of Open Source Security, Inc. A free and inferior solution is to read the Kernel Self Protection Project (KSPP) guidelines. 
                         KSPP provides a set of hardening options. Most distros apply a subset of the available hardening options when building their kernels. Arch/Artix Linux provide a package called 'linux-hardened', which implements all the KSPP recommendations. This kernel is optimized for servers and VMs. For daily Desktop usage, I don't recommend this kernel because of poor performance. Some distros, namely ParrotOS and Fedora, apply a configuration to harden the default kernel. Sadly, these distros use systemd and non-free firmware. I recommend to manually apply a similar config to a systemd-free system. It will prevent privilege escalation attacks through restricted ptrace access and disabled unprivileged BPF operations, while eliminating core dump generation to reduce attack surface. 
                     </p>
-                    
+                    <div class="spacer"></div>
+                    <h2 class="default-topic">Advanced Security measures.</h2>
+                    <p class="default-p">
+                        Warning : Only read this section if you have already understood the previous advices and installed MX Linux or Loc-OS in your computer. <br>
+                        Many open-source software have issues. 
+                        Qt-WebEngine and Electron apps are dangereous because they are based on an old chromium version with many vulnerabilities. More and more KDE apps depend on Qt-WebEngine, which is catastrophic.
+                        <br> The following packages are blacklisted by the Hyperbola team:
+                        gvfs, samba, nfs (Network File System), cups, avahi, sudo, polkit, pipewire.
+                        <br>Chromium, Firefox and VLC are not blacklisted but they are suspected to contain bugdoors. Hackers were able to exploit VLC to run malware remotely. I recommend to use SMPlayer instead. Besides, it's very easy to remove gvfs, samba, nfs and cups.
+                        
+                       <br>Instead of removing sudo and polkit, I recommend a more user-friendly approach:<a href="https://www.kicksecure.com/wiki/Dev/Strong_Linux_User_Account_Isolation"  target="_blank" class="a-simple">
+                        Strong Linux User Account Isolation</a> from Kicksecure.
                    
                 </div>
             </div>
