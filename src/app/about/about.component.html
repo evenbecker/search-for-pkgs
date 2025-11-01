@@ -52,18 +52,8 @@
                <a href="https://lukesmith.xyz/"  target="_blank" class="a-simple">
                 Luke Smith</a>,
                <a href="http://www.youtube.com/@emiliamerge7201"  target="_blank" class="a-simple">
-                Emilia Merge</a>, the Obarun community and many others. If you really need bloated web browsers or electron apps, then I recommend to follow one of these methods:</p>
-                <div class="bullet-box">
-                    <ul style="list-style-type:square;">
-                        <li>
-                sandbox these apps with Bubblejail 
-                        </li>
-                        <li> log as another user to use these apps. The dedicated user should not belong to sudo group (to prevent sudo password sniffing). To create a new user called 'mesnate', simply do:<br> useradd -m mesnate<br> passwd mesnate  
-                        </li>
-                            <li> run these apps in a Virtual Machine. I do not recommend distrobox/docker/AppImage/Flatpak for security reasons.
-                            </li>
-                        </ul>
-                    </div>
+                Emilia Merge</a>, the Obarun community and many others.</p>
+               
                 <p class="default-p">For email communication, using encryption helps protect the privacy of people you communicate with. GnuPG allows to encrypt your emails with a public key and a private key. </p>
                 <p class="default-p">What if you need to submit a rental application with employment information, your social security number, address? The recipient doesn't use GnuPG and you don't want that application sitting around in your email sent folder, or the recipient’s inbox forever. Shame on organizations which handle your sensitive data without any security. The only solution is to avoid relying on those organizations... but it's not always possible.</p>
                 <!--<button>
@@ -101,12 +91,14 @@
                     <h2 class="default-topic">Insecure new kernels.</h2>
                     <p class="default-p">
                         The kernel devs have almost lost control on their kernel since version 6.1. Sometimes, they merge code from third-parties  <span class="default-highlight"> without review</span>. I have seen unsigned kernel modules from Broadcom on some Debian-based OSs. According to the Kicksecure team, old LTS kernels, such as 5.10, have the smallest attack surface. The FSF is struggling to remove all the non-free code for building the linux-libre kernel. However they are powerless regarding the growing attack surface in new kernels. The Hyperbola team is so disappointed that Hyperbola GNU/Linux-libre is switching to an OpenBSD base.
-                        <br>GrSecurity brings additional patches to the mainline Linux kernel in order to enhance the security. Since April 2017, it is no longer free to the public. It is available only to paying customers of Open Source Security, Inc. A free and inferior solution is to read the Kernel Self Protection Project (KSPP) guidelines. 
-                        KSPP provides a set of hardening options. Most distros apply a subset of the available hardening options when building their kernels. Arch/Artix Linux provide a package called 'linux-hardened', which implements all the KSPP recommendations. This kernel is optimized for servers and VMs. For daily Desktop usage, I don't recommend this kernel because of poor performance. Some distros, namely ParrotOS and Fedora, apply a configuration to harden the default kernel. Sadly, these distros use systemd and non-free firmware. I recommend to manually apply a similar config to a systemd-free system. It will prevent privilege escalation attacks through restricted ptrace access and disabled unprivileged BPF operations, while eliminating core dump generation to reduce attack surface. 
+                        </p>
+                        <p class="default-p">GrSecurity brings additional patches to the mainline Linux kernel in order to enhance the security. Since April 2017, it is no longer free to the public. It is available only to paying customers of Open Source Security, Inc. A free and inferior solution is to read the Kernel Self Protection Project (KSPP) guidelines. 
+                        KSPP provides a set of hardening options. Most distros apply a subset of the available hardening options when building their kernels. Arch/Artix Linux provide a package called 'linux-hardened', which implements all the KSPP recommendations. This kernel is optimized for servers and VMs. For daily Desktop usage, I don't recommend this kernel because of poor performance. Some distros, namely Fedora and <a href="https://www.github-zh.com/projects/568579586-algiz-linux"  target="_blank" class="a-simple">
+                            Algiz Linux</a> (based on Artix), apply a configuration to harden the default kernel. I recommend to manually apply a similar config to your OS. It will prevent privilege escalation attacks through restricted ptrace access and disabled unprivileged BPF operations, while eliminating core dump generation to reduce attack surface. 
                     </p>
                     <div class="spacer"></div>
                     <h2 class="default-topic">Advanced Security measures.</h2>
-                    <p class="default-p">
+                    <p class="no-marge-p">
                         Warning : Only read this section if you have already understood the guidelines above and installed MX Linux or Loc-OS in your computer. <br>
                         Many open-source software have issues. 
                         Qt-WebEngine and Electron apps are dangereous because they are based on an old chromium version with many vulnerabilities. More and more KDE apps depend on Qt-WebEngine, which is catastrophic.
@@ -115,7 +107,19 @@
                         <br>Chromium, Firefox and VLC are not blacklisted but they are suspected to contain bugdoors. Hackers were able to exploit VLC to run malware remotely. I recommend to use SMPlayer instead. Besides, it's very easy to remove gvfs, samba, nfs and cups.
                         
                        <br>Instead of removing sudo and polkit, I recommend a more user-friendly approach:<a href="https://www.kicksecure.com/wiki/Dev/Strong_Linux_User_Account_Isolation"  target="_blank" class="a-simple">
-                        Strong Linux User Account Isolation</a> from Kicksecure.
+                        Strong Linux User Account Isolation</a> from Kicksecure. For instance, the daily user should not belong to sudo group in order to prevent sudo password sniffing. Even if the daily user is infected, malware won't be able to sniff the sudo password. The 'admin' user belongs to sudo group and shouldn't access any browser in order to prevent malware infection.
+                    <br>If you really need bloated web browsers or electron apps, then I recommend to follow one of these methods:</p>
+                        <div class="bullet-box">
+                            <ul style="list-style-type:square;">
+                                <li>
+                        sandbox these apps with Bubblejail 
+                                </li>
+                                <li> log as another user to use these apps. To create a new user called 'mesnate', simply do:<br> useradd -m mesnate<br> passwd mesnate  
+                                </li>
+                                    <li> run these apps in a Virtual Machine. KVM QEMU is more secure and faster than VirtualBox. I do not recommend distrobox/docker/AppImage/Flatpak for security reasons. LXC unprivileged container is secure but only advanced users can use it correctly.
+                                    </li>
+                                </ul>
+                            </div>
                    
                 </div>
             </div>
