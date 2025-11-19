@@ -6,7 +6,7 @@
                     <img src="../../assets/pictures/final_art_lukesmith.png" alt="art from Luke Smith" class="center-picture">
                 </p>
                 <p class="lastupdate">
-                    Last updated: October 31, 2025
+                    Last updated: November 19, 2025
                 </p>
                 <h2 class="default-topic">Security Insight.</h2>
                                              
@@ -54,8 +54,10 @@
                <a href="http://www.youtube.com/@emiliamerge7201"  target="_blank" class="a-simple">
                 Emilia Merge</a>, the Obarun community and many others.</p>
                
-                <p class="default-p">For email communication, using encryption helps protect the privacy of people you communicate with. GnuPG allows to encrypt your emails with a public key and a private key. </p>
-                <p class="default-p">What if you need to submit a rental application with employment information, your social security number, address? The recipient doesn't use GnuPG and you don't want that application sitting around in your email sent folder, or the recipient’s inbox forever. Shame on organizations which handle your sensitive data without any security. The only solution is to avoid relying on those organizations... but it's not always possible.</p>
+                <p class="default-p">Firefox contains some trackers and telemetry. Privacy-centric Firefox-based browsers are GNU IceCat, LibreWolf and Waterfox. MX, PCLinuxOS and Loc-OS provide repos with LibreWolf and Waterfox. That's why I recommend these three OSs for privacy-concerned Linux beginners. Advanced users may prefer Artix or Void Linux, praised by Luke Smith. 
+                </p>
+                <p class="no-marge-p">For email communication, using encryption helps protect the privacy of people you communicate with. GnuPG allows to encrypt your emails with a public key and a private key. </p>
+                <p class="no-marge-p">What if you need to submit a rental application with employment information, your social security number, address? The recipient doesn't use GnuPG and you don't want that application sitting around in your email sent folder, or the recipient’s inbox forever. Shame on organizations which handle your sensitive data without any security. The only solution is to avoid relying on those organizations... but it's not always possible.</p>
                 <!--<button>
                     <a href="https://sysdfree.wordpress.com/2024/04/02/384/"  target="_blank" class="a-green">
                         > Check the Linux xz fiasco 
@@ -99,12 +101,17 @@
                     <div class="spacer"></div>
                     <h2 class="default-topic">Advanced Security measures.</h2>
                     <p class="no-marge-p">
-                        Warning : Only read this section if you have already understood the guidelines above and installed MX Linux or Loc-OS in your computer. <br>
+                        Warning : Only read this section if you have already understood the guidelines above and installed MX Linux or Loc-OS in your computer. </p>
+                        <p>
+                            <img src="../../assets/pictures/fort.jpeg" alt="defence" class="logoFort">
+                        </p>
+                        <p class="no-marge-p">
                         Many open-source software have issues. 
-                        Qt-WebEngine and Electron apps are dangereous because they are based on an old chromium version with many vulnerabilities. More and more KDE apps depend on Qt-WebEngine, which is catastrophic.
+                        Qt-WebEngine and Electron apps are dangereous because they are based on an old chromium version with many vulnerabilities. More and more KDE apps depend on Qt-WebEngine, which is catastrophic. I recommend to use a window manager, like IceWM, and only install dependencies-lightweight KDE apps such as Kate and KFind.
                         <br> The following packages are blacklisted by the Hyperbola team:
-                        gvfs, samba, nfs (Network File System), cups, avahi, sudo, polkit, pipewire.
-                        <br>Chromium, Firefox and VLC are not blacklisted but they are suspected to contain bugdoors. Hackers were able to exploit VLC to run malware remotely. I recommend to use SMPlayer instead. Besides, it's very easy to remove gvfs, samba, nfs and cups.
+                        gvfs, samba, nfs (Network File System), cups, avahi, sudo, polkit, pipewire, chromium.
+                        <br>Chromium contains mysterious binaries and google trackers. Even if the Brave browser and Ungoogled-chromium are considered as privacy-centric, they are based on chromium. The Guix project is trying to package a cleaner chromium, free of google binaries, but it is only available in Guix. 
+                        <br>VLC is not blacklisted but it is suspected of containing bugdoors. Hackers were able to exploit VLC to run malware remotely. I recommend to use SMPlayer instead. Besides, it's very easy to remove gvfs, samba, nfs and cups.
                         
                        <br>Instead of removing sudo and polkit, I recommend a more user-friendly approach:<a href="https://www.kicksecure.com/wiki/Dev/Strong_Linux_User_Account_Isolation"  target="_blank" class="a-simple">
                         Strong Linux User Account Isolation</a> from Kicksecure. For instance, the daily user should not belong to sudo group in order to prevent sudo password sniffing. Even if the daily user is infected, malware won't be able to sniff the sudo password. The 'admin' user belongs to sudo group and shouldn't access any browser in order to prevent malware infection.
