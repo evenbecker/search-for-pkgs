@@ -1,82 +1,116 @@
 <div class="align-items-center default-container">
-    <div class="col-lg-8">
-      <div class="text-left">
-        <h1 class="home-title">Reclaim control over your OS by avoiding unnecessary entanglements and untold vulnerabilities.</h1>
-        <h2 class="home-author">Choose your init. <span id="dynamic-text">{{ dynamicText }}</span></h2>
-      </div>
-      <div class="text-two">  
-        <div class="myrow">
-          <div class="column">
-            <div class="maxi-w">
+  <div class="col-lg-8">
+    <div class="text-left">
+      <h1 class="home-title">
+        Reclaim control over your OS by avoiding unnecessary entanglements and
+        untold vulnerabilities.
+      </h1>
+      <h2 class="home-author">
+        Choose your init. <span id="dynamic-text">{{ dynamicText }}</span>
+      </h2>
+    </div>
+    <div class="text-two">
+      <div class="myrow">
+        <div class="column">
+          <div class="maxi-w">
             <p class="default-p">
-              I don't use Systemd init because PID1 must be simple, secure and stable. Most systemd-free distros use some systemd components, namely elogind. The most respectable systemd-free distro is Obarun because there are no hidden systemd components (elogind, libsystemd, esysusers, etmpfiles). Gentoo used to allow this setup, but not anymore. The Obarun community consists of Linux users who prioritize transparency, control, and simplicity. Obarun uses s6 init, the true successor of sysV. According to Joborun, s6 is the perfect init for advanced/industrial use cases, but runit is easier and satisfactory for single-user desktop Linux usage. Void Linux, Artix Linux and AntiX have a great runit implementation too. 
-          </p>
+              I don't use Systemd init because PID1 must be simple, secure and
+              stable. Most systemd-free distros use some systemd components,
+              namely elogind. The most respectable systemd-free distro is Obarun
+              because there are no hidden systemd components (elogind,
+              libsystemd, esysusers, etmpfiles). Gentoo used to allow this
+              setup, but not anymore. The Obarun community consists of Linux
+              users who prioritize transparency, control, and simplicity. Obarun
+              uses s6 init, the true successor of sysV. According to Joborun, s6
+              is the perfect init for advanced/industrial use cases, but runit
+              is easier and satisfactory for single-user desktop Linux usage.
+              Void Linux, Artix Linux and AntiX have a great runit
+              implementation too.
+            </p>
 
-          <p class="default-p margeTop">I have used Devuan, MX Minux, Loc-OS (icewm spin) and PCLinuxOS with sysV. Now I am exploring Void Linux with runit and I have written the following cheat sheet:</p>
+            <p class="default-p margeTop">
+              I have used Devuan, MX Minux, Loc-OS (IceWM spin) and PCLinuxOS
+              with sysV. Now I am exploring Void Linux with runit and I have
+              written the following cheat sheet:
+            </p>
           </div>
           <!-- <div id="filler"></div> -->
         </div>
-          <div class="column2">
-            <div id="vertical-logos">
+        <div class="column2">
+          <div id="vertical-logos">
             <a href="https://web.obarun.org/" target="_blank">
-              <img src="../../assets/pictures/logo_obarun.png" class="logo" alt="Obarun logo" />
-            </a>   
+              <img
+                src="../../assets/pictures/logo_obarun.png"
+                class="logo"
+                alt="Obarun logo"
+              />
+            </a>
             <a href="https://artixlinux.org/" target="_blank">
-              <img src="../../assets/pictures/ArtixLogo.svg" class="logoArtix" alt="Artix logo" />
-            </a> 
+              <img
+                src="../../assets/pictures/ArtixLogo.svg"
+                class="logoArtix"
+                alt="Artix logo"
+              />
+            </a>
             <a href="https://voidlinux.org/" target="_blank">
-              <img src="../../assets/pictures/Void_Linux_logo.svg" class="logoVoid" alt="Void logo" />
-            </a>   
+              <img
+                src="../../assets/pictures/Void_Linux_logo.svg"
+                class="logoVoid"
+                alt="Void logo"
+              />
+            </a>
             <a href="https://antixlinux.com/" target="_blank">
-              <img src="../../assets/pictures/nXecure-antiX-96x96.png" class="logoAntix" alt="AntiX logo" />
-            </a>    
-          </div>        
+              <img
+                src="../../assets/pictures/nXecure-antiX-96x96.png"
+                class="logoAntix"
+                alt="AntiX logo"
+              />
+            </a>
           </div>
         </div>
-    
-       
-        
       </div>
-      <div class="text-table">
-        <table>
-          <tr>
-            <th></th>
-            <th>sysV</th>
-            <th>runit</th>
-          </tr>
-          <tr>
-            <td>create a service and make the script executable</td>
-            <td>chmod +x /etc/init.d/my-service-script.sh</td>
-            <td>chmod +x /etc/sv/my-service-folder/run</td>
-          </tr>
-          <tr>
-            <td>enable a service, e.g. ufw</td>
-            <td>update-rc.d ufw defaults  </td>
-            <td>ln -s /etc/sv/ufw /service/</td>
-          </tr>  
-          <tr>
-            <td>start a service</td>
-            <td>/etc/init.d/ufw start</td>
-            <td>sv start ufw</td>
-          </tr>
-          <tr>
-            <td>disable a service at next boot</td>
-            <td>update-rc.d ufw disable <br>alternative: update-rc.d ufw remove</td>
-            <td>rm /service/ufw</td>
-          </tr>       
-          <tr>
-            <td>stop a service</td>
-            <td>/etc/init.d/ufw stop</td>
-            <td>sv stop ufw</td>
-          </tr>       
-          <tr>
-            <td>query service status</td>
-            <td>service ufw status</td>
-            <td>sv status ufw</td>
-          </tr>
-        </table>
-      </div>
-      <div class="spacer"></div>
     </div>
+    <div class="text-table">
+      <table>
+        <tr>
+          <th></th>
+          <th>sysV</th>
+          <th>runit</th>
+        </tr>
+        <tr>
+          <td>create a service and make the script executable</td>
+          <td>chmod +x /etc/init.d/my-service-script.sh</td>
+          <td>chmod +x /etc/sv/my-service-folder/run</td>
+        </tr>
+        <tr>
+          <td>enable a service, e.g. ufw</td>
+          <td>update-rc.d ufw defaults</td>
+          <td>ln -s /etc/sv/ufw /service/</td>
+        </tr>
+        <tr>
+          <td>start a service</td>
+          <td>/etc/init.d/ufw start</td>
+          <td>sv start ufw</td>
+        </tr>
+        <tr>
+          <td>disable a service at next boot</td>
+          <td>
+            update-rc.d ufw disable <br />alternative: update-rc.d ufw remove
+          </td>
+          <td>rm /service/ufw</td>
+        </tr>
+        <tr>
+          <td>stop a service</td>
+          <td>/etc/init.d/ufw stop</td>
+          <td>sv stop ufw</td>
+        </tr>
+        <tr>
+          <td>query service status</td>
+          <td>service ufw status</td>
+          <td>sv status ufw</td>
+        </tr>
+      </table>
+    </div>
+    <div class="spacer"></div>
   </div>
-  
+</div>
