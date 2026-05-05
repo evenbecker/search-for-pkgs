@@ -9,7 +9,7 @@
             class="center-picture"
           />
         </p>
-        <p class="lastupdate">Last updated: November 19, 2025</p>
+        <p class="lastupdate">Last updated: May 5, 2026</p>
         <h2 class="default-topic">Security Insight.</h2>
 
         <p class="default-p">
@@ -66,7 +66,7 @@
         </div>
         <div class="spacer"></div>
         <p class="default-p">
-          The best protection is to use FOSS (free and open source) software on
+          The best protection is to use FOSS (free and open-source software) on
           Linux/*BSD, to browse the internet with an up-to-date browser on
           Linux/*BSD and to
           <span class="default-highlight"
@@ -112,12 +112,10 @@
           users: Closed-source drivers/firmware,
           <a routerLink="/security" fragment="gnome_id" class="a-simple"
             >GNOME</a
-          >, Systemd and Snap should be avoided. Flatpak is dangereous because
-          most apps can access the microphone and home folder. Flatpak is not
-          security-focused. In addition, it is important to regularly inspect
-          the list of open ports. There should be none except those absolutely
-          needed. And even there, check whether the service can be moved to
-          127.0.0.1 or ::1.
+          >, Systemd and Snap should be avoided. In addition, it is important to
+          regularly inspect the list of open ports. There should be none except
+          those absolutely needed. And even there, check whether the service can
+          be moved to 127.0.0.1 or ::1.
         </p>
         <p class="no-marge-p">
           This approach is approved by
@@ -138,15 +136,12 @@
             class="a-simple"
           >
             Emilia Merge</a
-          >, the Obarun community and many others.
+          >, Mental Outlaw, the Obarun community and many others.
         </p>
 
         <p class="default-p">
           Firefox contains some trackers and telemetry. Privacy-centric
-          Firefox-based browsers are GNU IceCat, LibreWolf and Waterfox. MX,
-          PCLinuxOS and Loc-OS provide repos with LibreWolf and Waterfox. That's
-          why I recommend these three OSs for privacy-concerned Linux beginners.
-          Advanced users may prefer Artix or Void Linux, praised by Luke Smith.
+          Firefox-based browsers are GNU IceCat, LibreWolf and Waterfox.
         </p>
         <p class="no-marge-p">
           For email communication, using encryption helps protect the privacy of
@@ -274,7 +269,9 @@
           <h2 class="default-topic">Advanced Security measures.</h2>
           <p class="no-marge-p">
             Warning : Only read this section if you have already understood the
-            guidelines above and installed MX Linux or Loc-OS in your computer.
+            guidelines above and installed Devuan, Loc-OS or Salix in your
+            computer. Advanced users may prefer Artix or Void Linux, praised by
+            Luke Smith.
           </p>
           <p>
             <img
@@ -291,37 +288,79 @@
             manager, like IceWM, and only install dependencies-lightweight KDE
             apps such as Kate and KFind.
             <br />
-            The following packages are blacklisted by the Hyperbola team: gvfs,
-            lightdm, sddm, samba, nfs (Network File System), cups, avahi, sudo,
-            polkit, pipewire, chromium. <br />Chromium contains mysterious
-            binaries and google trackers. Even if the Brave browser and
-            Ungoogled-chromium are considered as privacy-centric, they are based
-            on chromium. The Guix project is trying to package a cleaner
-            chromium, free of google binaries, but it is only available in Guix.
-            <br />VLC is not blacklisted but it is suspected of containing
-            bugdoors. Hackers were able to exploit VLC to run malware remotely.
-            I recommend to use SMPlayer instead. Besides, it's very easy to
-            remove gvfs, samba, nfs and cups.
-
-            <br />Instead of removing sudo and polkit, I recommend a more
-            user-friendly approach:<a
-              href="https://www.kicksecure.com/wiki/Dev/Strong_Linux_User_Account_Isolation"
-              target="_blank"
-              class="a-simple"
-            >
-              Strong Linux User Account Isolation</a
-            >
-            from Kicksecure. For instance, the daily user should not belong to
-            sudo group in order to prevent sudo password sniffing. Even if the
-            daily user is infected, malware won't be able to sniff the sudo
-            password. The 'admin' user belongs to sudo group and shouldn't
-            access any browser in order to prevent malware infection. <br />If
-            you really need bloated web browsers or electron apps, then I
-            recommend to follow one of these methods:
+            Here I mention packages that are blacklisted by the Hyperbola team
+            and I explain how to live without them:
           </p>
           <div class="bullet-box">
             <ul style="list-style-type: square">
-              <li>sandbox these apps with Bubblejail</li>
+              <li>
+                <b>gvfs :</b> It's used in almost all file managers except
+                dolphin and spacefm.
+              </li>
+              <li>
+                <b>lightdm, sddm:</b> These display managers are insecure.
+                Devuan uses Slim. LXDM is also safe.
+              </li>
+              <li>
+                <b>samba, nfs (Network File System), cups, avahi: </b>
+                network-related pkgs to remove
+              </li>
+              <li>
+                <b>sudo, polkit:</b> Instead of removing sudo and polkit, I
+                recommend a more user-friendly approach:<a
+                  href="https://www.kicksecure.com/wiki/Dev/Strong_Linux_User_Account_Isolation"
+                  target="_blank"
+                  class="a-simple"
+                >
+                  Strong Linux User Account Isolation</a
+                >
+                from Kicksecure. For instance, the daily user should not belong
+                to sudo group in order to prevent sudo password sniffing. Even
+                if the daily user is infected, malware won't be able to sniff
+                the sudo password. The 'admin' user belongs to sudo group and
+                shouldn't access any browser in order to prevent malware
+                infection.
+              </li>
+              <li>
+                <b>Flatpak</b> is dangereous for both security and privacy:
+                <br />
+                - Security: you are trusting random developers on the Internet
+                to handle security of all the dependencies in a flatpak,
+                forever. Most do not provide security updates at all. In
+                addition, default config is bad: apps can access the microphone
+                and home folder. <br />
+                - Privacy: distros like Debian spot and patch out trackers,
+                telemetries and similar things. This is not done in flatpak
+                apps.
+              </li>
+              <li><b>pipewire, pulseaudio : </b> use ALSA instead</li>
+              <li>
+                <b>Chromium</b> contains mysterious binaries and google
+                trackers. Even if the Brave browser and Ungoogled-chromium are
+                considered as privacy-centric, they are based on chromium. The
+                Guix project is trying to package a cleaner chromium, free of
+                google binaries, but it is only available in Guix.
+              </li>
+            </ul>
+          </div>
+
+          <p class="no-marge-p">
+            VLC is not blacklisted but it is suspected of containing bugdoors.
+            Hackers were able to exploit VLC to run malware remotely. I
+            recommend to use SMPlayer instead.
+
+            <br />
+            <br />If you really need bloated web browsers or electron apps, then
+            I recommend to follow one of these methods:
+          </p>
+          <div class="bullet-box">
+            <ul style="list-style-type: square">
+              <li>
+                'sandbox' graphical applications with firejail/bubblejail and
+                Xephyr X11, so that they use their own isolated X11 server, with
+                no access to the "host" desktop, thereby inhibiting keylogging
+                and similar attacks
+              </li>
               <li>
                 log as another user to use these apps. To create a new user
                 called 'mesnate', simply do:<br />
