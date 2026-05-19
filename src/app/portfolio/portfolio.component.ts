@@ -18,7 +18,7 @@ export class PortfolioComponent {
     {
       id: 1,
       name: 'Void Linux',
-      summary: "An independent Linux distribution that uses a powerful package manager, which was made from scratch, and the runit init system. It tries to exclude binary kernel blobs and is therefore as trustworthy as Devuan.",
+      summary: "An independent Linux distribution that uses a powerful package manager, which was made from scratch, and the runit init system. It tries to exclude binary kernel blobs.",
       description: "F.",
       projectLink: 'https://voidlinux.org/',
       tags: [Tag.RUNIT, Tag.ELOGIND],
@@ -150,8 +150,24 @@ export class PortfolioComponent {
       tags: [Tag.DINIT, Tag.ELOGIND],
       pictures: []
     },
-    
-
+    {
+      id: 16,
+      name: 'Salix',
+      summary: "A distro based on Slackware with a polished xfce. It's simple, stable, fast and easy to use.",
+      description: "T.",
+      projectLink: 'https://www.salixos.org/',
+      tags: [Tag.SYSV, Tag.ELOGIND],
+      pictures: []
+    },
+    {
+      id: 17,
+      name: 'Elive',
+      summary: "A distro based on Debian. It comes with Enlightenment, a modern and lightweight DE with a built-in compositor. Enlightenment is more suckless than Lxqt/xfce.",
+      description: "T.",
+      projectLink: 'https://www.elivecd.org/',
+      tags: [Tag.OPENRC, Tag.ELOGIND],
+      pictures: []
+    },
   ]
 
 
