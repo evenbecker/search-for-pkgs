@@ -294,8 +294,26 @@
           <div class="bullet-box">
             <ul style="list-style-type: square">
               <li>
-                <b>gvfs :</b> It's used in almost all file managers except
-                dolphin and spacefm.
+                <b>GVFS :</b> It's used in almost all file managers except
+                dolphin and spacefm. GVFS was accepted in SUSE despite security concerns with 
+                <a
+                  href="https://bugzilla.suse.com/show_bug.cgi?id=1073214"
+                  target="_blank"
+                  class="a-simple"
+                >
+                  one audit in 2017</a
+                >
+                
+               and 
+                <a
+                  href="https://bugzilla.suse.com/show_bug.cgi?id=1124494"
+                  target="_blank"
+                  class="a-simple"
+                >
+                  a second audit in 2019.</a
+                >
+	
+	
               </li>
               <li>
                 <b>lightdm, sddm:</b> These display managers are insecure.
@@ -319,7 +337,7 @@
                 if the daily user is infected, malware won't be able to sniff
                 the sudo password. The 'admin' user belongs to sudo group and
                 shouldn't access any browser in order to prevent malware
-                infection.
+                infection. In addition, the SUID on pkexec should be removed and pkexec shouldn't be used.
               </li>
               <li>
                 <b>Flatpak</b> is dangereous for both security and privacy:
@@ -333,7 +351,11 @@
                 telemetries and similar things. This is not done in flatpak
                 apps.
               </li>
-              <li><b>pipewire, pulseaudio : </b> use ALSA instead</li>
+               <li>
+              <b>Gstreamer:</b> Say goodbye to most multimedia player. Doesn't it sound sadistic? Fortunately DeaDBeeF and smplayer are free of gstreamer. 
+              </li>
+              <li><b>qt6-multimedia</b> depends on Gstreamer. However Gentoo can build it without Gstreamer. So you can only enjoy dolphin, konsole and qmmp <b>on Gentoo!</b>
+                </li>
               <li>
                 <b>Chromium</b> contains mysterious binaries and google
                 trackers. Even if the Brave browser and Ungoogled-chromium are
@@ -341,6 +363,10 @@
                 Guix project is trying to package a cleaner chromium, free of
                 google binaries, but it is only available in Guix.
               </li>
+              <li>
+              <b>libsystemd:</b> Most distros build their packages with libpulse and libsystemd dependencies. Only a few distros are free of libsystemd: Slackware, Void, PCLinuxOS and Gentoo. There are some 'expert' distros but their community is very small. 
+              </li>
+              <li><b>pipewire, pulseaudio : </b> use ALSA instead. Yet some people think that pipewire is not dangereous in systems free of libsystemd.</li>
             </ul>
           </div>
 
