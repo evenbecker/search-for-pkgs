@@ -16,21 +16,18 @@
             <p class="default-p">
               I don't use Systemd init because PID1 must be simple, secure and
               stable. Most systemd-free distros use some systemd components,
-              namely elogind. The most respectable systemd-free distro is Obarun
-              because there are no hidden systemd components (elogind,
-              libsystemd, esysusers, etmpfiles). Gentoo used to allow this
-              setup, but not anymore. The Obarun community consists of Linux
-              users who prioritize transparency, control, and simplicity. Obarun
+              namely elogind and libsystemd. The most respectable systemd-free distros are libsystemd-free distros, namely 
+              Void Linux, Gentoo, Redcore, Slackware, Obarun and AntiX.              
+                Obarun
               uses s6 init, the true successor of sysV. According to Joborun, s6
               is the perfect init for advanced/industrial use cases, but runit
-              is easier and satisfactory for single-user desktop Linux usage.
-              Void Linux, Artix Linux and AntiX have a great runit
-              implementation too.
+              is easier and satisfactory for single-user desktop Linux usage. 
+              
             </p>
 
             <p class="default-p margeTop">
               I have used Devuan, MX Minux, Loc-OS (IceWM spin) and PCLinuxOS
-              with sysV. Now I am exploring Void Linux with runit and I have
+              with sysV. I have noticed that Redcore and Elive use OpenRC, a better init. Indeed, writing services scripts is easier with OpenRC. Now I am exploring Void Linux with runit and I have
               written the following cheat sheet:
             </p>
           </div>
@@ -45,11 +42,11 @@
                 alt="Obarun logo"
               />
             </a>
-            <a href="https://artixlinux.org/" target="_blank">
+            <a href="https://redcorelinux.org/" target="_blank">
               <img
-                src="../../assets/pictures/ArtixLogo.svg"
+                src="../../assets/pictures/redcore.png"
                 class="logoArtix"
-                alt="Artix logo"
+                alt="redcore logo"
               />
             </a>
             <a href="https://voidlinux.org/" target="_blank">

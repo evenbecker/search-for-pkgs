@@ -71,10 +71,10 @@ export class PortfolioComponent {
     },
     {
       id: 7,
-      name: 'Calculate Linux',
+      name: 'Redcore Linux',
       summary: "A distro based on Gentoo. It comes with a user-friendly GUI installer and OpenRC.",
       description: "T.",
-      projectLink: 'https://www.calculate-linux.org/',
+      projectLink: 'https://redcorelinux.org/',
       tags: [Tag.OPENRC, Tag.ELOGIND],
       pictures: []
     },
@@ -165,6 +165,15 @@ export class PortfolioComponent {
       summary: "A distro based on Debian. It comes with Enlightenment, a modern and lightweight DE with a built-in compositor. Enlightenment is more suckless than Lxqt/xfce.",
       description: "T.",
       projectLink: 'https://www.elivecd.org/',
+      tags: [Tag.OPENRC, Tag.ELOGIND],
+      pictures: []
+    },
+        {
+      id: 7,
+      name: 'Calculate Linux',
+      summary: "A distro based on Gentoo. It comes with a user-friendly GUI installer and OpenRC.",
+      description: "T.",
+      projectLink: 'https://www.calculate-linux.org/',
       tags: [Tag.OPENRC, Tag.ELOGIND],
       pictures: []
     },
