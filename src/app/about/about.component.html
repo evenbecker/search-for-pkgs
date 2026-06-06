@@ -9,7 +9,7 @@
             class="center-picture"
           />
         </p>
-        <p class="lastupdate">Last updated: May 31, 2026</p>
+        <p class="lastupdate">Last updated: June 6, 2026</p>
         <h2 class="default-topic">Security Insight.</h2>
 
         <p class="default-p">
@@ -281,7 +281,7 @@
           </p>
           <p class="no-marge-p">
             Many open-source software have issues. Qt-WebEngine and Electron
-            apps are dangereous because they are based on an old chromium
+            apps are dangerous because they are based on an old chromium
             version with many vulnerabilities. More and more KDE apps depend on
             Qt-WebEngine, which is catastrophic. I recommend to use a window
             manager, like IceWM, and only install dependencies-lightweight KDE
@@ -339,7 +339,7 @@
                 infection. In addition, the SUID on pkexec should be removed and pkexec shouldn't be used.
               </li>
               <li>
-                <b>Flatpak</b> is dangereous for both security and privacy:
+                <b>Flatpak</b> is dangerous for both security and privacy:
                 <br />
                 - Security: you are trusting random developers on the Internet
                 to handle security of all the dependencies in a flatpak,
@@ -351,10 +351,9 @@
                 apps.
               </li>
                <li>
-              <b>Gstreamer:</b> Say goodbye to most multimedia player. Doesn't it sound sadistic? Fortunately DeaDBeeF and smplayer are free of gstreamer. 
+              <b>Gstreamer</b> has a history of numerous critical CVEs. Say goodbye to fancy multimedia players. Doesn't it sound sadistic? Fortunately some nice multimedia players use libvlc and are free of gstreamer. 
               </li>
-              <li><b>qt6-multimedia</b> depends on Gstreamer. However Gentoo can build it without Gstreamer. So you can only enjoy dolphin, konsole and qmmp <b>on Gentoo!</b>
-                </li>
+              
               <li>
                 <b>Chromium</b> contains mysterious binaries and google
                 trackers. Even if the Brave browser and Ungoogled-chromium are
@@ -365,14 +364,16 @@
               <li>
               <b>libsystemd:</b> Most distros build their packages with libpulse and libsystemd dependencies. Only a few distros are free of libsystemd: Slackware, Void, PCLinuxOS and Gentoo. There are some 'expert' distros but their community is very small. 
               </li>
-              <li><b>pipewire, pulseaudio : </b> use ALSA instead. Yet some people think that pipewire is not dangereous in systems free of libsystemd.</li>
+              <li><b>pipewire, pulseaudio : </b> use ALSA instead. Yet some people think that pipewire is not dangerous in systems free of libsystemd.</li>
+              <li><b>udisks2</b> provides a daemon that runs as root and communicates with many components (logind, PAM, polkit, ...). KDE apps, LXQT and MATE depend on udisks2. Sacrificing them and removing udisks2 can increase security because it prevents many exploit chains. IceWM is a good choice.</li>
+              <li>Polkitd is safe but any software abusing polkit can make your system highly insecure. Examples: GVFS, udisks2, lightdm, many Gnome components, gufw. In addition, LXQT requires <b>polkit-qt</b>.</li>
             </ul>
           </div>
 
           <p class="no-marge-p">
             VLC is not blacklisted but it is suspected of containing bugdoors.
             Hackers were able to exploit VLC to run malware remotely. I
-            recommend to use SMPlayer instead.
+            recommend to use SMPlayer instead. Libvlc is safe.
 
             <br />
             <br />If you really need bloated web browsers or electron apps, then
