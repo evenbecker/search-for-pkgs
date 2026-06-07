@@ -265,6 +265,9 @@
             ptrace access and disabled unprivileged BPF operations, while
             eliminating core dump generation to reduce attack surface.
           </p>
+          <p class="default-p">
+            Lastly, there is an open-source alternative to Pax/Grsecurity named OpenPax. Alpine Linux provides already built kernels with OpenPax patchset. 
+          </p>
           <div class="spacer"></div>
           <h2 class="default-topic">Advanced Security measures.</h2>
           <p class="no-marge-p">
@@ -362,7 +365,7 @@
                 google binaries, but it is only available in Guix.
               </li>
               <li>
-              <b>libsystemd:</b> Most distros build their packages with libpulse and libsystemd dependencies. Only a few distros are free of libsystemd: Slackware, Void, PCLinuxOS and Gentoo. There are some 'expert' distros but their community is very small. 
+              <b>libsystemd:</b> Most distros build their packages with libpulse and libsystemd dependencies. Only a few distros are free of libsystemd: Slackware, Void, PCLinuxOS, Obarun, AntiX and Gentoo. There are some 'expert' distros but their community is very small. 
               </li>
               <li><b>pipewire, pulseaudio : </b> use ALSA instead. Yet some people think that pipewire is not dangerous in systems free of libsystemd.</li>
               <li><b>udisks2</b> provides a daemon that runs as root and communicates with many components (logind, PAM, polkit, ...). KDE apps, LXQT and MATE depend on udisks2. Sacrificing them and removing udisks2 can increase security because it prevents many exploit chains. IceWM is a good choice.</li>

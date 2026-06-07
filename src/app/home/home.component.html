@@ -15,9 +15,14 @@
           <div class="maxi-w">
             <p class="default-p">
               I don't use Systemd init because PID1 must be simple, secure and
-              stable. Most systemd-free distros use some systemd components,
-              namely elogind and libsystemd. The most respectable systemd-free distros are libsystemd-free distros, namely 
-              Void Linux, Gentoo, Redcore, Slackware, Obarun, PCLinuxOS and AntiX.              
+              stable. Debian used to have sysV init by default until 2015. Systemd adoption is comparable to 1997 Skynet adoption in Terminator: a big mistake with terrible consequences for users freedom. As the 
+          <a
+            href="https://suckless.org/"
+            target="_blank"
+            class="a-simple"
+          >
+            suckless community
+          </a> say: Systemd sucks.              
                 Obarun
               uses s6 init, the true successor of sysV. According to Joborun, s6
               is the perfect init for advanced/industrial use cases, but runit
@@ -27,7 +32,7 @@
 
             <p class="default-p margeTop">
               I have used Devuan, MX Minux, Loc-OS (IceWM spin) and PCLinuxOS
-              with sysV. I have noticed that Redcore and Elive use OpenRC, a better init. Indeed, writing services scripts is easier with OpenRC. Now I am exploring Void Linux with runit and I have
+              with sysV. I have noticed that Redcore and Elive use OpenRC, a better init. Indeed, writing services scripts is easier with OpenRC. Now I am exploring Void Linux and AntiX with runit and I have
               written the following cheat sheet:
             </p>
           </div>
