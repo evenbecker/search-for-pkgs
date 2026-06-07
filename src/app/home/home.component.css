@@ -101,7 +101,10 @@ tr:nth-child(even) {
     width: 80%;
     max-width: 220px;
     /*height: 6em;*/
-    padding: 1em;
+    padding-bottom: 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
     will-change: filter;
     transition: filter 300ms;
   }
@@ -109,10 +112,11 @@ tr:nth-child(even) {
     filter: drop-shadow(0 0 2em hsla(334, 68%, 44%, 0.667));
   }
   .logoVoid {
-    width: 80%;
-    max-width: 200px;
+    width: 64%;
+    max-width: 140px;
     /*height: 6em;*/
-    padding: 1em;
+    padding: 0.2em;
+    margin-left: 2.2em;
     will-change: filter;
     transition: filter 300ms;
   }
@@ -120,7 +124,7 @@ tr:nth-child(even) {
     filter: drop-shadow(0 0 2em hsla(130, 68%, 44%, 0.667));
   }
   .logoAntix {
-    max-width: 96px;
+    width: 100%;
     /*height: 6em;*/
     padding: 1em;
     /*margin-left: 1em;*/
